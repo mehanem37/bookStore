@@ -1,7 +1,6 @@
 package com.weCode.bookStore.controller;
 
 import com.weCode.bookStore.dto.BookDto;
-import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/books")
+@RequestMapping("api/vi/books")
 public class BookController {
 
     @GetMapping
@@ -20,10 +19,8 @@ public class BookController {
                 .title("My First book title")
                 .build();
 
-
         List<BookDto> books = new ArrayList<>();
         books.add(book);
         return ResponseEntity.ok(books);
-
     }
 }
