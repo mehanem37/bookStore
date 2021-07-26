@@ -4,7 +4,10 @@ before_install:
   – chmod +x gradlew
 
 jdk:
-  - openjdk16
+  - openjdk8
+
+script:
+  - ./gradlew check
 
 deploy:
   provider: heroku
