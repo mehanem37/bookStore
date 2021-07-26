@@ -16,7 +16,7 @@ public class BookController {
     @GetMapping
     public ResponseEntity<List<BookDto>> getBooks(){
         BookDto book = BookDto.builder()
-                .title("My First book title")
+                .title("My 1 First book title")
                 .build();
 
         BookDto bookSecond = BookDto.builder()
