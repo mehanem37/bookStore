@@ -9,4 +9,4 @@ jdk:
 deploy:
   provider: heroku
   api_key: $HEROKU_TOKEN
-  app: "book-store-demo-meni"
+  app: "book-demo-store-meni"
