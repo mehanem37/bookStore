@@ -10,4 +10,4 @@ deploy:
   provider: heroku
   api_key:
       secure: $HEROKU_TOKEN
-  app: "book-store-demo-meni"
+  app: "book-store-demo"
